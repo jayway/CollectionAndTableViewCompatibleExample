@@ -9,17 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: AutolayoutTableView!
+    lazy var data: MyTableViewData = MyTableViewData(user: self.user, andGenres: Genre.allGenres)
+    var user: User = User(name: "Fredrik", imageName: "fredrik.jpg")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.tableView.dataSource = self.data
+        self.tableView.delegate = self
+        self.tableView.prefetchDataSource = self.data
+        
+        data.prepareData()
+        
+        self.tableView.reloadData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
-
