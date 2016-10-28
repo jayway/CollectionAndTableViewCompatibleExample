@@ -26,10 +26,10 @@
 		35796FA91DBF4C48008D140F /* MainStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35796FA81DBF4C48008D140F /* MainStoryboard.swift */; };
 		35796FAD1DBF4CCD008D140F /* MyTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35796FAC1DBF4CCD008D140F /* MyTableViewData.swift */; };
 		35796FAF1DBF61A1008D140F /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35796FAE1DBF61A1008D140F /* GenreCell.swift */; };
-		35796FB11DBF752F008D140F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35796FB01DBF752F008D140F /* Genre.swift */; };
 		358938341DC0A5CF002032F6 /* AutolayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358938331DC0A5CF002032F6 /* AutolayoutTableView.swift */; };
 		358938361DC0AFFE002032F6 /* ChangeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358938351DC0AFFE002032F6 /* ChangeListener.swift */; };
 		358938381DC0CF11002032F6 /* ViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358938371DC0CF11002032F6 /* ViewController+UITableViewDelegate.swift */; };
+		35F740781DC37C460055E6DD /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F740771DC37C460055E6DD /* Genre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +54,10 @@
 		35796FA81DBF4C48008D140F /* MainStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboard.swift; sourceTree = "<group>"; };
 		35796FAC1DBF4CCD008D140F /* MyTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewData.swift; sourceTree = "<group>"; };
 		35796FAE1DBF61A1008D140F /* GenreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
-		35796FB01DBF752F008D140F /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		358938331DC0A5CF002032F6 /* AutolayoutTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutTableView.swift; sourceTree = "<group>"; };
 		358938351DC0AFFE002032F6 /* ChangeListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeListener.swift; sourceTree = "<group>"; };
 		358938371DC0CF11002032F6 /* ViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		35F740771DC37C460055E6DD /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +124,8 @@
 		358938301DC0A2F7002032F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35F740771DC37C460055E6DD /* Genre.swift */,
 				35796FA21DBF48BF008D140F /* User.swift */,
-				35796FB01DBF752F008D140F /* Genre.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Fredrik Nannestad";
 				TargetAttributes = {
 					35399EB71DBA0AC800F0A911 = {
@@ -235,7 +235,6 @@
 				358938341DC0A5CF002032F6 /* AutolayoutTableView.swift in Sources */,
 				35796F931DBE40C0008D140F /* Configurable.swift in Sources */,
 				35796F9D1DBE41D6008D140F /* TableViewData.swift in Sources */,
-				35796FB11DBF752F008D140F /* Genre.swift in Sources */,
 				35399EBC1DBA0AC800F0A911 /* AppDelegate.swift in Sources */,
 				35796FAF1DBF61A1008D140F /* GenreCell.swift in Sources */,
 				35796F971DBE414A008D140F /* DisplayCycle.swift in Sources */,
@@ -243,6 +242,7 @@
 				35796FA11DBE8C78008D140F /* UserCell.swift in Sources */,
 				35796FA31DBF48BF008D140F /* User.swift in Sources */,
 				358938361DC0AFFE002032F6 /* ChangeListener.swift in Sources */,
+				35F740781DC37C460055E6DD /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +286,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -336,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
