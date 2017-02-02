@@ -1,0 +1,23 @@
+//
+//  UserCollectionViewCell.swift
+//  TableViewCompatible
+//
+//  Created by Fredrik Nannestad on 31/01/2017.
+//  Copyright © 2017 Fredrik Nannestad. All rights reserved.
+//
+
+import UIKit
+
+class UserCollectionViewCell: UICollectionViewCell, Configurable {
+    
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    var model: UserCellModel?
+    
+    func configureWithModel(_ model: UserCellModel) {
+        self.model = model
+        userImageView.image = UIImage(named: model.imageName)
+        userNameLabel.text = model.userName
+    }
+}

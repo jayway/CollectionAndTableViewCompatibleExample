@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ViewController: UITableViewDelegate {
+extension TableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.willDisplay()
@@ -29,6 +29,10 @@ extension ViewController: UITableViewDelegate {
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        return self.data.tableView(tableView, targetIndexPathForMoveFromRowAt: sourceIndexPath, toProposedIndexPath: proposedDestinationIndexPath)
     }
     
     private func handleGenreSelection(model: GenreCellModel, forUser user: User) {
