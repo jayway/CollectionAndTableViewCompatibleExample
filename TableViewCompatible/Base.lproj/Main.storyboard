@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="199" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-kg-DY8" customClass="AutolayoutTableView" customModule="TableViewCompatible" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="231" id="LZH-7v-CMI" customClass="UserTableViewCell" customModule="TableViewCompatible" customModuleProvider="target">
@@ -95,9 +95,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="W0B-kg-DY8" secondAttribute="trailing" id="7VU-1c-9Q3"/>
+                            <constraint firstAttribute="bottom" secondItem="W0B-kg-DY8" secondAttribute="bottom" id="Fp2-0O-Miv"/>
                             <constraint firstItem="W0B-kg-DY8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eh5-W2-M9o"/>
                             <constraint firstItem="W0B-kg-DY8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sFa-h8-bks"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W0B-kg-DY8" secondAttribute="bottom" id="wei-3Y-PkK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bNl-Pe-dsB">

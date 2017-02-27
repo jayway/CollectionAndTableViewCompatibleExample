@@ -22,6 +22,10 @@ class GenreTableViewCell: UITableViewCell, Configurable, ChangeListener {
         
     }
     
+    override func didEndDisplay() {
+        
+    }
+    
     func configureWithModel(_ model: GenreCellModel) {
         self.model = model
         self.label.text = model.genre.description
