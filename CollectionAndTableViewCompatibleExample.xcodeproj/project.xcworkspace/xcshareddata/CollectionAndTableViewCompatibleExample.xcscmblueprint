@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1CB20F41-1FB0-409D-95B4-819FCAF9F6C8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "BFD57C5D5EFD4EC131F13229BC426A2CDD53866A" : "TableViewCompatibleXcode\/",
-    "99A97285AD5B3E35A28A471D49F7E38D59BF8130" : "TableViewCompatibleXcode\/CollectionAndTableViewCompatible\/"
+    "BFD57C5D5EFD4EC131F13229BC426A2CDD53866A" : "CollectionAndTableViewCompatibleExample\/",
+    "99A97285AD5B3E35A28A471D49F7E38D59BF8130" : "CollectionAndTableViewCompatibleExample\/CollectionAndTableViewCompatible\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CollectionAndTableViewCompatibleExample",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
