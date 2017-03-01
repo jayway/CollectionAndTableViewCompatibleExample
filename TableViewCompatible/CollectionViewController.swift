@@ -19,16 +19,7 @@ class CollectionViewController: UICollectionViewController {
         data = MyCollectionViewDataSource(user: self.user, andGenres: Genre.allGenres, collectionView: collectionView!)
         data.prepareData()
         collectionView?.reloadData()
-    }
     
-    @IBAction func edit(sender: UIBarButtonItem!) {
-        self.setEditing(!self.isEditing, animated: true)
-        updateLeftItem()
-    }
-    
-    private func updateLeftItem() {
-        let systemItem: UIBarButtonSystemItem = self.isEditing ? .done : .edit
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: systemItem, target: self, action: #selector(edit(sender:)))
     }
     
 }

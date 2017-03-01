@@ -1,3 +1,4 @@
 [submodule "CollectionAndTableViewCompatible"]
 	path = CollectionAndTableViewCompatible
 	url = git@github.com:jayway/CollectionAndTableViewCompatible.git
+	ignore = dirty

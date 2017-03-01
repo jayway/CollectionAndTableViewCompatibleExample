@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vTx-ok-FfJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vTx-ok-FfJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="231"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LZH-7v-CMI" id="00f-EP-rwR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="230.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6I-oU-KV0">
@@ -65,7 +65,7 @@
                                         <rect key="frame" x="0.0" y="259" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LpF-Ew-XQO" id="usF-KA-bUj">
-                                            <rect key="frame" x="0.0" y="0.0" width="336" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0Y-4E-wIw">
@@ -115,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="82" y="52"/>
         </scene>
-        <!--Item-->
+        <!--Table-->
         <scene sceneID="DK8-xp-LDB">
             <objects>
                 <navigationController id="uer-Yt-adt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cEQ-WH-Ola"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="listTabBarIcon" id="cEQ-WH-Ola"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FbA-uu-ii6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -150,11 +150,11 @@
             </objects>
             <point key="canvasLocation" x="-1999" y="423"/>
         </scene>
-        <!--Item-->
+        <!--Collection-->
         <scene sceneID="eex-n6-KHI">
             <objects>
                 <navigationController id="x6N-rP-kVS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fLI-bo-Q5X"/>
+                    <tabBarItem key="tabBarItem" title="Collection" image="gridTabBarIcon" id="fLI-bo-Q5X"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6lB-VE-s49">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -246,13 +246,7 @@
                             <outlet property="delegate" destination="gsK-2I-JLB" id="baZ-I5-q6d"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="HkJ-Jn-h1x">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="ybM-lL-7HR">
-                            <connections>
-                                <action selector="editWithSender:" destination="gsK-2I-JLB" id="UIl-FW-zlP"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="HkJ-Jn-h1x"/>
                     <connections>
                         <outlet property="collectionView" destination="0xO-zw-0KS" id="I0d-ms-8cf"/>
                     </connections>
@@ -262,4 +256,8 @@
             <point key="canvasLocation" x="81" y="800"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gridTabBarIcon" width="25" height="25"/>
+        <image name="listTabBarIcon" width="25" height="25"/>
+    </resources>
 </document>
