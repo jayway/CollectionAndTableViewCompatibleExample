@@ -61,7 +61,7 @@
 		35357C5C1E644B1300EB2B07 /* TableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewData.swift; sourceTree = "<group>"; };
 		35357C5D1E644B1300EB2B07 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		35357C5E1E644B1300EB2B07 /* TableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
-		35399EB81DBA0AC800F0A911 /* TableViewCompatible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCompatible.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35399EB81DBA0AC800F0A911 /* CollectionAndTableViewCompatibleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionAndTableViewCompatibleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35399EBB1DBA0AC800F0A911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35399EBD1DBA0AC800F0A911 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		35399EC01DBA0AC800F0A911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		35399EB91DBA0AC800F0A911 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35399EB81DBA0AC800F0A911 /* TableViewCompatible.app */,
+				35399EB81DBA0AC800F0A911 /* CollectionAndTableViewCompatibleExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,9 +255,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		35399EB71DBA0AC800F0A911 /* TableViewCompatible */ = {
+		35399EB71DBA0AC800F0A911 /* CollectionAndTableViewCompatibleExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35399ECA1DBA0AC800F0A911 /* Build configuration list for PBXNativeTarget "TableViewCompatible" */;
+			buildConfigurationList = 35399ECA1DBA0AC800F0A911 /* Build configuration list for PBXNativeTarget "CollectionAndTableViewCompatibleExample" */;
 			buildPhases = (
 				35399EB41DBA0AC800F0A911 /* Sources */,
 				35399EB51DBA0AC800F0A911 /* Frameworks */,
@@ -267,9 +267,9 @@
 			);
 			dependencies = (
 			);
-			name = TableViewCompatible;
+			name = CollectionAndTableViewCompatibleExample;
 			productName = TableViewCompatible;
-			productReference = 35399EB81DBA0AC800F0A911 /* TableViewCompatible.app */;
+			productReference = 35399EB81DBA0AC800F0A911 /* CollectionAndTableViewCompatibleExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 35399EB31DBA0AC800F0A911 /* Build configuration list for PBXProject "TableViewCompatible" */;
+			buildConfigurationList = 35399EB31DBA0AC800F0A911 /* Build configuration list for PBXProject "CollectionAndTableViewCompatibleExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -302,7 +302,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35399EB71DBA0AC800F0A911 /* TableViewCompatible */,
+				35399EB71DBA0AC800F0A911 /* CollectionAndTableViewCompatibleExample */,
 			);
 		};
 /* End PBXProject section */
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35399EB31DBA0AC800F0A911 /* Build configuration list for PBXProject "TableViewCompatible" */ = {
+		35399EB31DBA0AC800F0A911 /* Build configuration list for PBXProject "CollectionAndTableViewCompatibleExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35399EC81DBA0AC800F0A911 /* Debug */,
@@ -517,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35399ECA1DBA0AC800F0A911 /* Build configuration list for PBXNativeTarget "TableViewCompatible" */ = {
+		35399ECA1DBA0AC800F0A911 /* Build configuration list for PBXNativeTarget "CollectionAndTableViewCompatibleExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35399ECB1DBA0AC800F0A911 /* Debug */,

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BFD57C5D5EFD4EC131F13229BC426A2CDD53866A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BFD57C5D5EFD4EC131F13229BC426A2CDD53866A" : 9223372036854775807,
+    "99A97285AD5B3E35A28A471D49F7E38D59BF8130" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1CB20F41-1FB0-409D-95B4-819FCAF9F6C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BFD57C5D5EFD4EC131F13229BC426A2CDD53866A" : "TableViewCompatibleXcode\/",
+    "99A97285AD5B3E35A28A471D49F7E38D59BF8130" : "TableViewCompatibleXcode\/CollectionAndTableViewCompatible\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CollectionAndTableViewCompatibleExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CollectionAndTableViewCompatibleExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jayway\/CollectionAndTableViewCompatible.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99A97285AD5B3E35A28A471D49F7E38D59BF8130"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jayway\/CollectionAndTableViewCompatibleExample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFD57C5D5EFD4EC131F13229BC426A2CDD53866A"
+    }
+  ]
+}
