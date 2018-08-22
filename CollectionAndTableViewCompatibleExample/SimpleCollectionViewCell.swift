@@ -13,7 +13,7 @@ class SimpleCollectionViewCell: UICollectionViewCell, Configurable {
     @IBOutlet weak var label: UILabel!
     var model: SimpleCellModel?
     
-    func configureWithModel(_ model: SimpleCellModel) {
+    func configure(withModel model: SimpleCellModel) {
         self.model = model
         label.text = model.string
     }

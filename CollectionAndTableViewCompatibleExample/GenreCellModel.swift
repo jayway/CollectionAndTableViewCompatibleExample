@@ -8,21 +8,15 @@
 
 import UIKit
 
-class GenreCellModel: TableViewCompatible, CollectionViewCompatible, ChangeNotifier {
-    
-    weak var changeListener: ChangeListener?
+class GenreCellModel: NSObject, TableViewCompatible, CollectionViewCompatible {
     
     var reuseIdentifier: String {
         return MainStoryboard.GenreCellIdentifier
     }
     
     let genre: Genre
-    
-    var selected: Bool = false {
-        didSet {
-            changeListener?.notify(notifier: self)
-        }
-    }
+
+    @objc dynamic var selected: Bool = false
     
     var editable: Bool = true
     var movable: Bool = true
@@ -33,13 +27,13 @@ class GenreCellModel: TableViewCompatible, CollectionViewCompatible, ChangeNotif
     
     func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! GenreTableViewCell
-        cell.configureWithModel(self)
+        cell.configure(withModel: self)
         return cell
     }
     
     func cellForCollectionView(collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GenreCollectionViewCell
-        cell.configureWithModel(self)
+        cell.configure(withModel: self)
         return cell
     }
     

@@ -15,7 +15,7 @@ class UserTableViewCell: UITableViewCell, Configurable {
     
     var model: UserCellModel?
     
-    func configureWithModel(_ model: UserCellModel) {
+    func configure(withModel model: UserCellModel) {
         self.model = model
         userImageView.image = UIImage(named: model.imageName)
         userNameLabel.text = model.userName

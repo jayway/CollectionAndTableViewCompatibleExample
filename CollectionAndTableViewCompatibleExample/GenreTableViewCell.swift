@@ -8,32 +8,36 @@
 
 import UIKit
 
-class GenreTableViewCell: UITableViewCell, Configurable, ChangeListener {
+class GenreTableViewCell: UITableViewCell, Configurable {
     
     @IBOutlet weak var label: UILabel!
     
-    var model: GenreCellModel? {
-        didSet {
-            model?.changeListener = self
-        }
-    }
+    var model: GenreCellModel?
+
+    private var observation: NSKeyValueObservation?
     
-    override func willDisplay() {
-        
-    }
+//    override func willDisplay() {
+//        print(#function)
+//    }
+//    
+//    override func didEndDisplay() {
+//        print(#function)
+//    }
     
-    override func didEndDisplay() {
-        
-    }
-    
-    func configureWithModel(_ model: GenreCellModel) {
+    func configure(withModel model: GenreCellModel) {
+
         self.model = model
         self.label.text = model.genre.description
+
+        // Remove previous observation
+        self.observation = nil
+
         self.updateCheckmark()
-    }
-    
-    func notify(notifier: ChangeNotifier) {
-        self.updateCheckmark()
+
+        self.observation = model.observe(\.selected) { [unowned self] (model, change) in
+            self.updateCheckmark()
+        }
+
     }
     
     private func updateCheckmark() {

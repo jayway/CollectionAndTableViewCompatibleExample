@@ -23,13 +23,13 @@ class SimpleCellModel: TableViewCompatible, CollectionViewCompatible {
     
     func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SimpleTableViewCell
-        cell.configureWithModel(self)
+        cell.configure(withModel: self)
         return cell
     }
     
     func cellForCollectionView(collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SimpleCollectionViewCell
-        cell.configureWithModel(self)
+        cell.configure(withModel: self)
         return cell
     }
 }

@@ -12,7 +12,7 @@ extension UITableView {
     
     func enableAutolayoutForCellHeights(estimatedRowHeight: CGFloat = 44) {
         self.estimatedRowHeight = estimatedRowHeight
-        self.rowHeight = UITableViewAutomaticDimension
+        self.rowHeight = UITableView.automaticDimension
     }
     
 }

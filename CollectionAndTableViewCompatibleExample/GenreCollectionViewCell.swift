@@ -8,27 +8,15 @@
 
 import UIKit
 
-class GenreCollectionViewCell: UICollectionViewCell, Configurable, ChangeListener {
+class GenreCollectionViewCell: UICollectionViewCell, Configurable {
     
     @IBOutlet weak var label: UILabel!
     
-    var model: GenreCellModel? {
-        didSet {
-            model?.changeListener = self
-        }
-    }
+    var model: GenreCellModel?
     
-    func configureWithModel(_ model: GenreCellModel) {
+    func configure(withModel model: GenreCellModel) {
         self.model = model
         self.label.text = model.genre.description
-        self.updateCheckmark()
     }
-    
-    func notify(notifier: ChangeNotifier) {
-        self.updateCheckmark()
-    }
-    
-    private func updateCheckmark() {
-        
-    }
+
 }

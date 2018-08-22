@@ -29,7 +29,7 @@ class TableViewController: UIViewController {
     }
     
     private func updateLeftItem() {
-        let systemItem: UIBarButtonSystemItem = self.isEditing ? .done : .edit
+        let systemItem: UIBarButtonItem.SystemItem = self.isEditing ? .done : .edit
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: systemItem, target: self, action: #selector(edit(sender:)))
     }
 
